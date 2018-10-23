@@ -1,0 +1,135 @@
+html,
+body {
+  height: 100%;
+  overflow: hidden;
+}
+body {
+  margin: 0;
+}
+[class^='flaticon-']:before,
+[class*=' flaticon-']:before,
+[class^='flaticon-']:after,
+[class*=' flaticon-']:after {
+  margin-left: 0;
+}
+.clear {
+  clear: both;
+}
+
+.col {
+  height: 100%;
+  position: relative;
+  -webkit-transition: width 0.3s ease-in-out;
+  -moz-transition: width 0.3s ease-in-out;
+  -o-transition: width 0.3s ease-in-out;
+  -ms-transition: width 0.3s ease-in-out;
+  transition: width 0.3s ease-in-out;
+}
+.col iframe {
+  width: 100%;
+  height: 100%;
+}
+.wrapper {
+  height: 100%;
+  display: flex;
+}
+.wrapper .demoapp {
+  width: 1%;
+}
+.wrapper .demoapp iframe {
+  display: none;
+}
+.wrapper.open .demoapp {
+  width: 421px;
+  flex-shrink: 0;
+}
+.wrapper.open .demoapp iframe {
+  display: block;
+}
+.wrapper .demo {
+  width: 99%;
+}
+.wrapper.open .demo {
+  flex: 1;
+}
+.wrapper.open .close {
+  visibility: visible;
+  opacity: 1;
+}
+.wrapper.open .opener {
+  visibility: hidden;
+  opacity: 0;
+}
+.close {
+  visibility: hidden;
+  opacity: 0;
+  width: 72px;
+  height: 72px;
+  line-height: 72px;
+  text-align: center;
+  background-color: #5b31b7;
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 9;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  color: rgba(255, 255, 255, 0.9);
+}
+.demoapp .close:hover {
+  color: #fff;
+}
+.demoapp .close i:before {
+  font-size: 14px;
+}
+.opener {
+  visibility: visible;
+  opacity: 1;
+  position: absolute;
+  background-color: #fff;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  border-radius: 8px;
+  z-index: 9;
+  top: 50%;
+  right: -25px;
+  cursor: pointer;
+  -webkit-box-shadow: 0px 0px 55px 0px rgba(86, 41, 182, 0.3);
+  -moz-box-shadow: 0px 0px 55px 0px rgba(86, 41, 182, 0.3);
+  box-shadow: 0px 0px 55px 0px rgba(86, 41, 182, 0.3);
+  color: #5629b6;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.opener:hover {
+  transform: scale(1.04);
+}
+@media screen and (max-width: 420px) {
+  .col {
+    float: none;
+  }
+  .wrapper .demoapp,
+  .wrapper.open .demoapp,
+  .wrapper .demo,
+  .wrapper.open .demo {
+    width: 100% !important;
+  }
+  .opener,
+  .close {
+    display: none;
+  }
+}
+@media screen and (max-width: 768px) and (min-width: 420px) {
+  .wrapper.open .demoapp {
+    width: 50%;
+  }
+}
