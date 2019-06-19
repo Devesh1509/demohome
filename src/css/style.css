@@ -63,9 +63,9 @@ body {
 .close {
   visibility: hidden;
   opacity: 0;
-  width: 72px;
-  height: 72px;
-  line-height: 72px;
+  width: 70px;
+  height: 70px;
+  line-height: 70px;
   text-align: center;
   background-color: #5b31b7;
   cursor: pointer;
